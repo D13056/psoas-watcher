@@ -11,10 +11,9 @@ Monitors the PSOAS apartment listing page and sends Telegram (and optional email
 - Persistent state to avoid duplicate alerts
 
 ## Quick install (one line)
-Replace YOUR_GH_USER in the command:
 
 ```bash
-sudo bash -lc 'apt-get update -y && apt-get install -y curl git && curl -fsSL https://raw.githubusercontent.com/YOUR_GH_USER/psoas-watcher/main/bootstrap.sh | bash'
+sudo bash -lc 'apt-get update -y && apt-get install -y curl git && curl -fsSL https://raw.githubusercontent.com/D13056/psoas-watcher/main/bootstrap.sh | REPO_URL=https://github.com/D13056/psoas-watcher.git bash'
 ```
 
 This will:
@@ -24,7 +23,7 @@ This will:
 
 ## Manual install
 ```bash
-git clone https://github.com/YOUR_GH_USER/psoas-watcher.git
+git clone https://github.com/D13056/psoas-watcher.git
 cd psoas-watcher
 sudo bash install_psoas_watcher.sh
 ```
