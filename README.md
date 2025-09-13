@@ -14,7 +14,7 @@ Monitors the PSOAS apartment listing page and sends Telegram (and optional email
 Replace YOUR_GH_USER in the command:
 
 ```bash
-sudo bash -lc 'apt-get update -y && apt-get install -y curl git && curl -fsSL https://raw.githubusercontent.com/YOUR_GH_USER/psoas-watcher/master/bootstrap.sh | bash'
+sudo bash -lc 'apt-get update -y && apt-get install -y curl git && curl -fsSL https://raw.githubusercontent.com/YOUR_GH_USER/psoas-watcher/main/bootstrap.sh | bash'
 ```
 
 This will:

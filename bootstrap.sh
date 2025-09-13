@@ -21,10 +21,5 @@ command -v git >/dev/null 2>&1 || apt-get update && apt-get install -y git
 git clone "$REPO_URL" "$CLONE_DIR"
 cd "$CLONE_DIR"
 
-# If a .env is provided in the current folder where this script is run (stdin method won't have), we can copy it.
-if [[ -f ".env" ]]; then
-  echo "Using local .env"
-  cp .env /workspaces/999/.env || true
-fi
-
+# If a .env is present in this directory, the installer will import it automatically.
 bash install_psoas_watcher.sh
